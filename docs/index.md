@@ -1,6 +1,10 @@
 # **User-Defined Functions**
 ## **Introduction** 
 In the Server Query Language (SQL), a User-Defined Function is an object that allows for scripts to be “stored in the database [to] avoid writing the same code over and over again” (SQL Shack, https://www.sqlshack.com/learn-sql-user-defined-functions/, 2020) (External Site). It enables a user to control the input parameters and how it is defined to reach the desired output. The three types of User-Defined Functions are Scalar, Inline, and Multi-Statement Functions which can contain an increasing complexity of statements to yield a singular or unique set of values. The syntax for the object depends on whether the Create, Alter or Drop is used and can encapsulate SQL statement instructions that are either small or bulky (Figure 1). Thus, it is beneficial in situations where the function can be recalled for “calculation you’ll repeat throughout your database” (SQL Shack, (SQL Shack, https://www.sqlshack.com/learn-sql-user-defined-functions/, 2020) (External Site).
+
+[image](https://user-images.githubusercontent.com/105769165/171306405-4025e393-9440-4ee1-b751-e2fe74bd6573.png)
+###### Figure 1: Create/Alter/Drop Syntax for User-Defined Function
+
 ## **Scalar, Inline and Multi-Statement Functions**
 A User-Defined Scalar Function takes any number of parameters and “returns a single value each time it is invoked” (IBM, https://www.ibm.com/docs/en/db2-for-zos/11?topic=function-sql-Scalar-functions, 2022) (External Site). Much like the other User-Defined Functions, it is used to simplify code when complex and bulky calculations appear in many queries. The syntax encapsulates SQL statements designed to output a singular value by the defined function (Figure 2). As an example, the UCASE Scalar Function returns each column value per row in uppercase (Figure 3). As such, it operates on each record independently and is based on user input to return a single value. 
 ## **Summary**
